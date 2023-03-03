@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-dotnet60-basic-1haj
     spec:
       containers:
-      - image: quay.io/redhat-appstudio-qe/test-images-protected:l42kW-devfile-sample-dotnet60-basic-1haj
+      - image: quay.io/redhat-appstudio-qe/test-images-protected@sha256:4b0fa6d9956dff8ff3aebd4a1a3c49d69c1c5d4bc70e6c587d325936f8fe8342
         imagePullPolicy: Always
         name: main
         ports:
