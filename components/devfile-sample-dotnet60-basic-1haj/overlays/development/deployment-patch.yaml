@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-dotnet60-basic-1haj
+  namespace: e2e-demos-uzhy-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images-protected@sha256:4b0fa6d9956dff8ff3aebd4a1a3c49d69c1c5d4bc70e6c587d325936f8fe8342
+        name: main
+        resources: {}
+status: {}
